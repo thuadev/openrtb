@@ -9,7 +9,7 @@
   <groupId>com.youdao.openrtb</groupId>
   <artifactId>openrtb-parent</artifactId>
   <packaging>pom</packaging>
-  <version>0.9.8</version>
+  <version>0.9.8-SNAPSHOT</version>
   <name>Google OpenRTB Libraries</name>
   <description>
     OpenRTB model for Java and other languages via protobuf;
@@ -33,12 +33,18 @@
     <system>Github</system>
     <url>https://github.com/google/openrtb/issues</url>
   </issueManagement>
-
   <distributionManagement>
     <repository>
-      <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>nexus3</id>
+      <name>internal nexus3 repository</name>
+      <url>https://nexus3.corp.youdao.com/repository/maven-central/</url>
     </repository>
+    <snapshotRepository>
+      <id>nexus3-snapshot</id>
+      <name>internal nexus3 snapshot repository</name>
+      <url>https://nexus3.corp.youdao.com/repository/maven-snapshots/</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
   </distributionManagement>
 
   <modules>
