@@ -15,7 +15,7 @@
  */
 
 syntax = "proto2";
-package com.google.openrtb;
+package com.google.youdao.openrtb;
 option java_outer_classname = "OpenRtb";
 
 // OpenRTB extensions ("ext" fields in the spec & JSON representation)
