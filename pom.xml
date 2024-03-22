@@ -6,7 +6,7 @@
     <artifactId>oss-parent</artifactId>
     <version>7</version>
   </parent>
-  <groupId>com.google.openrtb</groupId>
+  <groupId>com.youdao.openrtb</groupId>
   <artifactId>openrtb-parent</artifactId>
   <packaging>pom</packaging>
   <version>0.9.8</version>
@@ -175,7 +175,7 @@
           <groups>
             <group>
               <title>OpenRTB</title>
-              <packages>com.google.openrtb:com.google.openrtb.json:com.google.openrtb.mapper:com.google.openrtb.snippet:com.google.openrtb.util</packages>
+              <packages>com.youdao.openrtb:com.youdao.openrtb.json:com.youdao.openrtb.mapper:com.youdao.openrtb.snippet:com.youdao.openrtb.util</packages>
             </group>
           </groups>
         </configuration>

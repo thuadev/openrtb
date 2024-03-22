@@ -14,14 +14,27 @@
  * limitations under the License.
  */
 
-syntax = "proto2";
-package com.youdao.openrtb;
-option java_outer_classname = "Test";
+package com.youdao.openrtb.snippet;
 
-message Test1 {
-  required string test1 = 1;
-}
-message Test2 {
-  optional string test2 = 1;
-  repeated string test3 = 2;
+import javax.annotation.Nullable;
+
+/**
+ * A snippet macro cannot be used, because its value was not defined correctly.
+ */
+public class UndefinedMacroException extends RuntimeException {
+  private final SnippetMacroType key;
+
+  public UndefinedMacroException(SnippetMacroType key) {
+    super("Macro " + key + " was not correctly defined and cannot be used");
+    this.key = key;
+  }
+
+  public UndefinedMacroException(SnippetMacroType key, @Nullable String message) {
+    super(message);
+    this.key = key;
+  }
+
+  public final SnippetMacroType key() {
+    return key;
+  }
 }
