@@ -35,12 +35,12 @@
   </issueManagement>
   <distributionManagement>
     <repository>
-      <id>nexus3</id>
+      <id>maven-releases</id>
       <name>internal nexus3 repository</name>
       <url>https://nexus3.corp.youdao.com/repository/maven-central/</url>
     </repository>
     <snapshotRepository>
-      <id>nexus3-snapshot</id>
+      <id>maven-snapshots</id>
       <name>internal nexus3 snapshot repository</name>
       <url>https://nexus3.corp.youdao.com/repository/maven-snapshots/</url>
       <uniqueVersion>false</uniqueVersion>
