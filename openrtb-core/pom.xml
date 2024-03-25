@@ -6,9 +6,9 @@
   <name>Google OpenRTB Core</name>
 
   <parent>
-    <groupId>com.google.openrtb</groupId>
+    <groupId>com.google.openrtb.youdao</groupId>
     <artifactId>openrtb-parent</artifactId>
-    <version>0.9.8</version>
+    <version>0.9.8-SNAPSHOT</version>
   </parent>
 
   <dependencies>

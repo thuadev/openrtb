@@ -6,10 +6,10 @@
     <artifactId>oss-parent</artifactId>
     <version>7</version>
   </parent>
-  <groupId>com.google.openrtb</groupId>
+  <groupId>com.google.openrtb.youdao</groupId>
   <artifactId>openrtb-parent</artifactId>
   <packaging>pom</packaging>
-  <version>0.9.8</version>
+  <version>0.9.8-SNAPSHOT</version>
   <name>Google OpenRTB Libraries</name>
   <description>
     OpenRTB model for Java and other languages via protobuf;
@@ -33,13 +33,6 @@
     <system>Github</system>
     <url>https://github.com/google/openrtb/issues</url>
   </issueManagement>
-
-  <distributionManagement>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
 
   <modules>
     <module>openrtb-core</module>
@@ -96,6 +89,20 @@
     <developerConnection>scm:git:https://github.com/google/openrtb.git</developerConnection>
     <tag>0.9.8</tag>
   </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>maven-releases</id>
+      <name>internal nexus3 repository</name>
+      <url>https://nexus3.corp.youdao.com/repository/maven-central/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven-snapshots</id>
+      <name>internal nexus3 snapshot repository</name>
+      <url>https://nexus3.corp.youdao.com/repository/maven-snapshots/</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+  </distributionManagement>
 
   <build>
     <plugins>
